@@ -31,6 +31,7 @@
 #include "SDK/Types.h"
 #include "SDK/Util/Util.h"
 #include "SDK/Util/Cmd.h"
+#include "SDK/Util/Input.h"
 #include "SDK/Fibers/Fiber.h"
 #include "SDK/Fibers/Manager.h"
 #include "SDK/Fibers/Queue.h"

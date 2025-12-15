@@ -54,12 +54,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR pCmdLine, int nCmdShow)
     {
         fiber_manager::tick();
 
-        std::this_thread::sleep_for(0ms);
-
-        if (GetAsyncKeyState(VK_F12))
+        if (input::is_key_pressed(VK_F12))
         {
             break;
         }
+
+        std::this_thread::sleep_for(0ms);
     }
 
     MessageBoxA(NULL, "Press OK to exit.", "Close Application", MB_OK);
