@@ -137,19 +137,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="SDK\Console\Console.cpp" />
     <ClCompile Include="SDK\Fibers\Fiber.cpp" />
     <ClCompile Include="SDK\Fibers\Manager.cpp" />
     <ClCompile Include="SDK\Fibers\Queue.cpp" />
-    <ClCompile Include="SDK\Util.cpp" />
+    <ClCompile Include="SDK\Util\Input.cpp" />
+    <ClCompile Include="SDK\Util\Util.cpp" />
+    <ClCompile Include="SDK\Util\Cmd.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Global.h" />
-    <ClInclude Include="SDK\Console\Console.h" />
     <ClInclude Include="SDK\Fibers\Fiber.h" />
     <ClInclude Include="SDK\Fibers\Manager.h" />
     <ClInclude Include="SDK\Fibers\Queue.h" />
-    <ClInclude Include="SDK\Util.h" />
+    <ClInclude Include="SDK\Types.h" />
+    <ClInclude Include="SDK\Util\Input.h" />
+    <ClInclude Include="SDK\Util\Util.h" />
+    <ClInclude Include="SDK\Util\Cmd.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,7 +18,7 @@ namespace app
 
         [[nodiscard]] bool is_ready() const;
         [[nodiscard]] bool is_finished() const;
-        [[nodiscard]] std::string_view get_name() const;
+        [[nodiscard]] std::string get_name() const;
         [[nodiscard]] std::uint32_t get_name_hash() const;
 
         void tick();

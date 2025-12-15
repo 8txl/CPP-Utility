@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SDK\Util.cpp">
+    <ClCompile Include="SDK\Util\Util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SDK\Fibers\Fiber.cpp">
@@ -27,15 +27,18 @@
     <ClCompile Include="SDK\Fibers\Queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\Console\Console.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="SDK\Util\Cmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Util\Input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SDK\Util.h">
+    <ClInclude Include="SDK\Util\Util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SDK\Fibers\Fiber.h">
@@ -47,10 +50,16 @@
     <ClInclude Include="SDK\Fibers\Queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\Console\Console.h">
+    <ClInclude Include="Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Global.h">
+    <ClInclude Include="SDK\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Util\Cmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Util\Input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

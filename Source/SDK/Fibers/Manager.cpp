@@ -3,10 +3,11 @@
 
 namespace app::fiber_manager 
 {
-    void add_fiber(std::string name, std::function<void()> function)
+    void add_fiber(const std::string& name, std::function<void()> function)
     {
         auto fiber = std::make_shared<Fiber>(name, function);
         add_fiber(fiber);
+        CMD("Info", "Created fiber {}", name);
     }
 
     void add_fiber(std::shared_ptr<Fiber> fiber)
@@ -15,7 +16,7 @@ namespace app::fiber_manager
         g_fibers.push_back(std::move(fiber));
     }
 
-    bool remove_fiber(std::string_view name)
+    bool remove_fiber(const std::string& name)
     {
         return remove_fiber(util::joaat(name));
     }
@@ -44,6 +45,7 @@ namespace app::fiber_manager
     void tick()
     {
         std::lock_guard lock(g_fibers_mutex);
+
         for (auto it = g_fibers.begin(); it != g_fibers.end();) 
         {
             const auto& fiber = *it;

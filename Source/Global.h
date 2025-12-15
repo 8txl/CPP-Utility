@@ -26,19 +26,14 @@
 #include <map>
 #include <array>
 #include <typeindex>
-#define APP_NAME "App"
-
+#define APP "App"
 //SDK
-#include "SDK/Util.h"
-#include "SDK/Console/Console.h"
+#include "SDK/Types.h"
+#include "SDK/Util/Util.h"
+#include "SDK/Util/Cmd.h"
 #include "SDK/Fibers/Fiber.h"
 #include "SDK/Fibers/Manager.h"
 #include "SDK/Fibers/Queue.h"
-
-inline std::string operator ""_gradient(const char* str, size_t)
-{
-	return app::console::detail::gradient_text(str);
-}
 
 namespace app // Global namespace
 {

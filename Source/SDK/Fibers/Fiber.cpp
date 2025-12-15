@@ -26,7 +26,7 @@ namespace app
         return m_finished;
     }
 
-    std::string_view Fiber::get_name() const { return m_name; }
+    std::string Fiber::get_name() const { return m_name; }
 
     std::uint32_t Fiber::get_name_hash() const { return util::joaat(m_name); }
 
